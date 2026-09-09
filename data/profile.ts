@@ -11,12 +11,12 @@ export const profile = {
   bio: "Saya membangun website modern, interaktif, dan scalable dengan teknologi web modern.",
 
   special: {
-    name: "Her Name",
+    name: "Naylaaa",
     photo: "/images/cewe.png",
     date: "A little place made just for you ♡",
 
     message:
-      "Terima kasih sudah menjadi seseorang yang selalu memberikan warna di hari-hariku. Website ini mungkin hanya kumpulan kode, tapi ada sedikit bagian di dalamnya yang sengaja aku buat khusus untuk kamu.",
+      "Terima kasih yaa sayang, sudah menjadi seseorang yang selalu memberikan warna di hari-hariku. Website ini mungkin hanya kumpulan kode, tapi ada sedikit bagian di dalamnya yang sengaja aku buat khusus untuk kamu.",
 
     messageTwo:
       "Semoga kamu selalu tahu kalau aku akan selalu mendukungmu, percaya sama kamu, dan bangga dengan semua hal kecil maupun besar yang kamu lakukan.",
