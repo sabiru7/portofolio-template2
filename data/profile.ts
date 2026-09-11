@@ -1,22 +1,22 @@
 export const profile = {
   name: "Sabil Eka Muhammad",
-  username: "@yourusername",
+  username: "@sabiru7",
   role: "Backend Developer",
   location: "Indonesia",
 
-  email: "yourmail@gmail.com",
+  email: "sabilmicrosoft12@gmail.com",
 
   photo: "/images/profile.png",
 
   bio: "Saya membangun website modern, interaktif, dan scalable dengan teknologi web modern.",
 
   special: {
-    name: "Naylaaa",
+    name: "Her Name",
     photo: "/images/cewe.png",
     date: "A little place made just for you ♡",
 
     message:
-      "Terima kasih yaa sayang, sudah menjadi seseorang yang selalu memberikan warna di hari-hariku. Website ini mungkin hanya kumpulan kode, tapi ada sedikit bagian di dalamnya yang sengaja aku buat khusus untuk kamu.",
+      "Terima kasih yaa, sudah menjadi seseorang yang selalu memberikan warna di hari-hariku. Website ini mungkin hanya kumpulan kode, tapi ada sedikit bagian di dalamnya yang sengaja aku buat khusus untuk kamu.",
 
     messageTwo:
       "Semoga kamu selalu tahu kalau aku akan selalu mendukungmu, percaya sama kamu, dan bangga dengan semua hal kecil maupun besar yang kamu lakukan.",
@@ -27,22 +27,22 @@ export const profile = {
   socials: [
     {
       name: "GitHub",
-      url: "https://github.com/",
+      url: "https://github.com/sabiru7",
       icon: "github",
     },
     {
       name: "LinkedIn",
-      url: "https://linkedin.com/",
+      url: "https://www.linkedin.com/in/sabil-muhammad-823338334/",
       icon: "linkedin",
     },
     {
       name: "Instagram",
-      url: "https://instagram.com/",
+      url: "https://www.instagram.com/sakadev._/",
       icon: "instagram",
     },
     {
       name: "WhatsApp",
-      url: "https://wa.me/628123456789",
+      url: "https://wa.me/6282112461434",
       icon: "message",
     },
   ],
@@ -62,25 +62,23 @@ export const profile = {
 
   projects: [
     {
-      title: "Modern Dashboard",
+      title: "Moderen Dashboard Gallspace",
       description:
         "Dashboard modern dengan responsive layout, analytics, dan interactive components.",
       image:
-        "https://images.unsplash.com/photo-1551288049-bebda4e38f71?w=1200",
-      tags: ["Next.js", "TypeScript", "Tailwind"],
-      demo: "https://example.com",
-      github: "https://github.com/",
+        "./images/projek1.png",
+      tags: ["Laravel", "SQL", "Tailwind CSS"],
+      github: "https://github.com/sabiru7/Gallspace-By-SAKADEV",
     },
 
     {
-      title: "E-Commerce Website",
+      title: "Website Klinik Depok",
       description:
-        "Website e-commerce modern dengan product catalog dan shopping experience.",
+        "Website klinik dengan fitur pendaftaran online, informasi layanan, dan integrasi dengan sistem manajemen klinik.",
       image:
-        "https://images.unsplash.com/photo-1556742049-0cfed4f6a45d?w=1200",
+        "./images/projek2.png",
       tags: ["React", "Next.js", "Node.js"],
-      demo: "https://example.com",
-      github: "https://github.com/",
+      github: "https://github.com/sabiru7/website-klinik-depok",
     },
 
     {

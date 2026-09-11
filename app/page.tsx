@@ -1,3 +1,4 @@
+
 "use client";
 
 import { useEffect, useState } from "react";
@@ -272,7 +273,11 @@ export default function Home() {
       </div>
 
       {/* NAVBAR */}
-      <nav className={`navbar ${scrolled ? "navbar-scrolled" : ""}`}>
+      <nav
+        className={`navbar ${
+          scrolled ? "navbar-scrolled" : ""
+        }`}
+      >
         <a
           href="#home"
           className="brand"
@@ -283,28 +288,50 @@ export default function Home() {
           <span>/&gt;</span>
         </a>
 
-        <div className={`nav-links ${menuOpen ? "open" : ""}`}>
-          <a href="#home" onClick={() => setMenuOpen(false)}>
+        <div
+          className={`nav-links ${
+            menuOpen ? "open" : ""
+          }`}
+        >
+          <a
+            href="#home"
+            onClick={() => setMenuOpen(false)}
+          >
             Home
           </a>
 
-          <a href="#about" onClick={() => setMenuOpen(false)}>
+          <a
+            href="#about"
+            onClick={() => setMenuOpen(false)}
+          >
             About
           </a>
 
-          <a href="#skills" onClick={() => setMenuOpen(false)}>
+          <a
+            href="#skills"
+            onClick={() => setMenuOpen(false)}
+          >
             Skills
           </a>
 
-          <a href="#projects" onClick={() => setMenuOpen(false)}>
+          <a
+            href="#projects"
+            onClick={() => setMenuOpen(false)}
+          >
             Projects
           </a>
 
-          <a href="#for-her" onClick={() => setMenuOpen(false)}>
-            For You ♡
+          <a
+            href="#supporter"
+            onClick={() => setMenuOpen(false)}
+          >
+            Supporter
           </a>
 
-          <a href="#contact" onClick={() => setMenuOpen(false)}>
+          <a
+            href="#contact"
+            onClick={() => setMenuOpen(false)}
+          >
             Contact
           </a>
         </div>
@@ -347,12 +374,18 @@ export default function Home() {
           </p>
 
           <div className="hero-buttons">
-            <a href="#projects" className="primary-button">
+            <a
+              href="#projects"
+              className="primary-button"
+            >
               View My Work
               <ArrowUpRight size={18} />
             </a>
 
-            <a href="#contact" className="secondary-button">
+            <a
+              href="#contact"
+              className="secondary-button"
+            >
               Contact Me
             </a>
           </div>
@@ -449,20 +482,20 @@ export default function Home() {
 
             <div className="stats">
               <div>
-                <strong>20+</strong>
-                <span>Projects</span>
+                <strong>25+</strong>
+                <span>Projects Github</span>
               </div>
 
               <div>
                 <strong>
                   {profile.skills.length}+
                 </strong>
-                <span>Technologies</span>
+                <span>Language Skills</span>
               </div>
 
               <div>
                 <strong>100%</strong>
-                <span>Passion</span>
+                <span>Trusted</span>
               </div>
             </div>
           </div>
@@ -553,16 +586,6 @@ export default function Home() {
                 <div className="project-number">
                   0{index + 1}
                 </div>
-
-                <a
-                  href={project.demo}
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  className="project-open"
-                  aria-label={`Open ${project.title}`}
-                >
-                  <ArrowUpRight />
-                </a>
               </div>
 
               <div className="project-info">
@@ -577,15 +600,6 @@ export default function Home() {
                 </div>
 
                 <div className="project-links">
-                  <a
-                    href={project.demo}
-                    target="_blank"
-                    rel="noopener noreferrer"
-                  >
-                    Live Demo
-                    <ArrowUpRight size={14} />
-                  </a>
-
                   <a
                     href={project.github}
                     target="_blank"
@@ -611,7 +625,7 @@ export default function Home() {
           <div className="profile-card-left">
             <div className="social-avatar">
               <img
-                src={profile.photo}
+                src="https://github.com/sabiru7.png"
                 alt={profile.name}
               />
             </div>
@@ -642,13 +656,13 @@ export default function Home() {
         </div>
       </section>
 
-      {/* FOR HER */}
+      {/* FOR SUPPORTER */}
       <section
-        id="for-her"
+        id="supporter"
         className="section for-her"
       >
         <div className="section-label">
-          05 / FOR SOMEONE SPECIAL
+          05 / FOR SUPPORTER
         </div>
 
         <div className="special-card reveal">
@@ -788,3 +802,4 @@ export default function Home() {
     </main>
   );
 }
+
