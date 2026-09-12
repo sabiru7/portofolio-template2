@@ -12,7 +12,7 @@ export const profile = {
 
   special: {
     name: "Her Name",
-    photo: "/images/cewe.png",
+    photo: "./images/cewe.png",
     date: "A little place made just for you ♡",
 
     message:
@@ -41,9 +41,9 @@ export const profile = {
       icon: "instagram",
     },
     {
-      name: "WhatsApp",
-      url: "https://wa.me/6282112461434",
-      icon: "message",
+      name: "Discord",
+      url: "https://dsc.gg/nolmiringnol",
+      icon: "discord",
     },
   ],
 
@@ -77,7 +77,7 @@ export const profile = {
         "Website klinik dengan fitur pendaftaran online, informasi layanan, dan integrasi dengan sistem manajemen klinik.",
       image:
         "./images/projek2.png",
-      tags: ["React", "Next.js", "Node.js"],
+      tags: ["Laravel", "MySQL", "Twailwind CSS"],
       github: "https://github.com/sabiru7/website-klinik-depok",
     },
 
