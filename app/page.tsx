@@ -3,6 +3,7 @@
 
 import { useEffect, useState } from "react";
 import { profile } from "@/data/profile";
+import { FaDiscord } from "react-icons/fa";
 
 const IconBase = ({
   children,
@@ -321,12 +322,6 @@ export default function Home() {
             Projects
           </a>
 
-          <a
-            href="#supporter"
-            onClick={() => setMenuOpen(false)}
-          >
-            Supporter
-          </a>
 
           <a
             href="#contact"
@@ -549,71 +544,83 @@ export default function Home() {
         </div>
       </section>
 
-      {/* PROJECTS */}
-      <section
-        id="projects"
-        className="section projects-section"
-      >
-        <div className="section-label">
-          03 / SELECTED WORK
-        </div>
 
-        <div className="section-heading reveal">
-          <h2>
-            Things I&apos;ve <span>built.</span>
-          </h2>
+        {/* PROJECTS */}
+        <section
+          id="projects"
+          className="section projects-section"
+        >
+          <div className="section-label">
+            03 / SELECTED WORK
+          </div>
 
-          <p>
-            Beberapa project yang pernah saya kerjakan.
-          </p>
-        </div>
+          <div className="section-heading reveal">
+            <h2>
+              Things I&apos;ve <span>built.</span>
+            </h2>
 
-        <div className="projects">
-          {profile.projects.map((project, index) => (
-            <article
-              className="project-card reveal"
-              key={project.title}
-            >
-              <div className="project-image">
-                <img
-                  src={project.image}
-                  alt={project.title}
-                  loading="lazy"
-                />
+            <p>
+              Beberapa project yang pernah saya kerjakan.
+            </p>
+          </div>
 
-                <div className="project-overlay" />
+          <div className="projects">
+            {profile.projects.map((project, index) => (
+              <article
+                className="project-card reveal"
+                key={project.title}
+              >
+                <div className="project-image">
+                  <img
+                    src={project.image}
+                    alt={project.title}
+                    loading="lazy"
+                  />
 
-                <div className="project-number">
-                  0{index + 1}
-                </div>
-              </div>
+                  <div className="project-overlay" />
 
-              <div className="project-info">
-                <h3>{project.title}</h3>
-
-                <p>{project.description}</p>
-
-                <div className="tags">
-                  {project.tags.map((tag) => (
-                    <span key={tag}>{tag}</span>
-                  ))}
+                  <div className="project-number">
+                    {String(index + 1).padStart(2, "0")}
+                  </div>
                 </div>
 
-                <div className="project-links">
-                  <a
-                    href={project.github}
-                    target="_blank"
-                    rel="noopener noreferrer"
-                  >
-                    GitHub
-                    <Github size={14} />
-                  </a>
+                <div className="project-info">
+                  <h3>{project.title}</h3>
+
+                  <p>{project.description}</p>
+
+
+                  <div className="project-links">
+                    {/* PROJECT 1 & 2 = GITHUB */}
+                    {index !== 2 && project.github && (
+                      <a
+                        href={project.github}
+                        target="_blank"
+                        rel="noopener noreferrer"
+                      >
+                        GitHub
+                        <Github size={14} />
+                      </a>
+                    )}
+
+                    {/* PROJECT 3 = DISCORD */}
+                    {index === 2 && project.discord && (
+                      <a
+                        href={project.discord}
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        aria-label="Server Discord Nol Miring Nol"
+                      >
+                        <FaDiscord size={14} />
+                        Discrod
+                      </a>
+                    )}
+                  </div>
                 </div>
-              </div>
-            </article>
-          ))}
-        </div>
-      </section>
+              </article>
+            ))}
+          </div>
+        </section>
 
       {/* PROFILE / FIND ME */}
       <section className="section profile-section">
@@ -655,7 +662,6 @@ export default function Home() {
           </div>
         </div>
       </section>
-
 
       {/* CONTACT */}
       <section

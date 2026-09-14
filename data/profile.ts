@@ -42,7 +42,7 @@ export const profile = {
     },
     {
       name: "Discord",
-      url: "https://dsc.gg/nolmiringnol",
+      url: "https://discord.com/users/739049805933838367",
       icon: "discord",
     },
   ],
@@ -82,14 +82,12 @@ export const profile = {
     },
 
     {
-      title: "Creative Landing Page",
-      description:
-        "Landing page dengan animasi interaktif dan visual futuristic.",
-      image:
-        "https://images.unsplash.com/photo-1460925895917-afdab827c52f?w=1200",
-      tags: ["HTML", "CSS", "JavaScript"],
-      demo: "https://example.com",
-      github: "https://github.com/",
-    },
+  title: "Discord Server NMN",
+  description:
+    "NMN STUDIO — Community for developers, gamers, and creators. Tempat untuk belajar, berbagi, berkarya, dan membangun relasi. Dari coding sampai gaming, semuanya berkembang bersama.",
+  image:
+    "./images/projek3.png",
+  discord: "https://dsc.gg/nolmiringnol",
+}
   ],
 };
